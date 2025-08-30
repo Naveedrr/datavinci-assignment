@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZHC UMF/MGO - Manuka Honey</title>
+    <link rel="stylesheet" href="vinci.css">
+    </head>
+<body>
+    <div class="mobile-header">
+        NZHC UMF/MGO
+    </div>
+    
+    <nav class="top-nav">
+        <div class="nav-left">
+            WHICH MANUKA IS FOR ME?
+        </div>
+        <div class="logo">
+            <div class="logo-text">NEW ZEALAND<br>HONEY CO.</div>
+        </div>
+        <div class="nav-links">
+            <a href="#">Shop</a>
+            <a href="#">Explore</a>
+            <a href="#">About</a>
+            <a href="#">Rewards</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <span style="font-size: 16px;">🔍</span>
+            <span style="font-size: 16px;">👤</span>
+            <div class="cart-icon">1</div>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <div class="product-images">
+            <div class="main-image">
+                <button class="nav-arrows prev">❮</button>
+                <div class="honey-jar">
+                    <div class="jar-label">
+                        <div class="brand">NEW ZEALAND<br>HONEY CO.</div>
+                        <div class="product">MANUKA</div>
+                        <div class="ratings">24+ 1122+</div>
+                    </div>
+                </div>
+                <button class="nav-arrows next">❯</button>
+            </div>
+            <div class="thumbnail-grid">
+                <div class="thumbnail active">
+                    <div class="thumbnail-text">Main Product</div>
+                </div>
+                <div class="thumbnail">
+                    <div class="thumbnail-text">Lifestyle</div>
+                </div>
+                <div class="thumbnail">
+                    <div class="thumbnail-text">In Use</div>
+                </div>
+                <div class="thumbnail">
+                    <div class="thumbnail-text">Natural Raw</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-info">
+            <h1>Manuka Honey</h1>
+            <div class="product-subtitle">UMF 24+<br>MGO 1122+</div>
+            
+            <button class="info-button" onclick="showModal()">
+                <span>ⓘ</span> What is UMF and MGO?
+            </button>
+            
+            <div class="reviews">
+                <div class="stars">★★★★★</div>
+                <div class="review-count">625 REVIEWS</div>
+            </div>
+            
+            <div class="description">
+                <strong>The Optimiser</strong><br><br>
+                For those times in life when quality comes first, this pure UMF™ 24+ Manuka Honey is powerfully active, sourced from wild and rugged locations around New Zealand and great for almost all uses. It has a full, delicious flavour that your body will love and enjoy.
+            </div>
+            
+            <div class="certifications">
+                <div class="cert-badge">UMF</div>
+                <div class="cert-badge">🌱</div>
+                <div class="cert-badge">✓</div>
+                <div class="cert-badge">○</div>
+                <div class="cert-badge">RANZ</div>
+            </div>
+            
+            <div class="size-selector">
+                <h4>SIZE (SELECT ONE)</h4>
+                <div class="size-variant">Variant: 125g | 4.4oz</div>
+                
+                <div class="size-options">
+                    <div class="size-option active">
+                        <div class="size">UMF 5+</div>
+                        <div class="weight">250g</div>
+                    </div>
+                    <div class="size-option">
+                        <div class="size">UMF 10+</div>
+                        <div class="weight">250g</div>
+                    </div>
+                    <div class="size-option">
+                        <div class="size">UMF 15+</div>
+                        <div class="weight">250g</div>
+                    </div>
+                    <div class="size-option">
+                        <div class="size">UMF 20+</div>
+                        <div class="weight">250g</div>
+                    </div>
+                </div>
+                
+                <div class="bottom-row">
+                    <div class="size-option">
+                        <div class="size">UMF 24+</div>
+                        <div class="weight">250g</div>
+                    </div>
+                    <div class="size-option">
+                        <div class="size">UMF 26+</div>
+                        <div class="weight">125g</div>
+                    </div>
+                    <div class="size-option">
+                        <div class="size">Bundle</div>
+                        <div class="weight">Pack</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-options">
+                <h4>PAYMENT OPTIONS (SELECT ONE)</h4>
+                <div class="payment-buttons">
+                    <button class="payment-btn one-time">
+                        One-time<br>
+                        <strong>$55.88</strong><br>
+                        <small>USD</small>
+                    </button>
+                    <button class="payment-btn subscribe">
+                        Subscribe & save<br>
+                        <strong>$44.70</strong><br>
+                        <small>20% USD</small>
+                    </button>
+                </div>
+                <div class="subscription-info">
+                    <span>ⓘ</span> What is a Subscription?
+                </div>
+            </div>
+            
+            <div class="quantity-selector">
+                <span class="quantity-label">SELECT QUANTITY</span>
+                <div class="quantity-control">
+                    <button class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                    <input type="number" class="qty-input" value="1" min="1" readonly>
+                    <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+            </div>
+            
+            <button class="add-to-cart">ADD TO CART</button>
+            
+            <div class="bundle-section">
+                <div class="bundle-header">
+                    <h4>Beauty Bundle</h4>
+                    <span>→</span>
+                </div>
+                <div class="bundle-items">
+                    <div class="bundle-item">
+                        <div class="item-name">UMF 20+</div>
+                        <div class="item-size">250g</div>
+                    </div>
+                    <div class="bundle-plus">+</div>
+                    <div class="bundle-item">
+                        <div class="item-name">UMF 24+</div>
+                        <div class="item-size">250g</div>
+                    </div>
+                    <div class="bundle-plus">+</div>
+                    <div class="bundle-item">
+                        <div class="item-name">Wooden<br>Spoon</div>
+                    </div>
+                </div>
+                <div class="bundle-pricing">
+                    <div>
+                        <span class="original-price">$478.75 USD</span>
+                        <span class="bundle-price">$430.88 USD</span>
+                        <span class="savings">Save 10%</span>
+                    </div>
+                </div>
+                <button class="add-bundle">ADD BUNDLE TO CART</button>
+            </div>
+            
+            <div class="delivery-info">
+                <div class="section">
+                    <div class="section-title">DELIVERY</div>
+                    <div>FREE DELIVERY ON ORDERS OVER $30</div>
+                </div>
+                <div class="section">
+                    <div class="section-title">ESTIMATED DELIVERY DATE</div>
+                    <div>Jun 9 - Jun 13 NZ</div>
+                </div>
+                <div class="section">
+                    <div class="section-title">AFTER PAY</div>
+                    <div>or 4 interest-free payments of $13.97 💚 Afterpay</div>
+                </div>
+            </div>
+            
+            <div class="umf-scale">
+                <div class="umf-scale-title">UMF™ SCALE</div>
+                <div class="scale-options">
+                    <div class="scale-option">UMF™ 10+</div>
+                    <div class="scale-option">UMF™ 15+</div>
+                    <div class="scale-option">UMF™ 20+</div>
+                    <div class="scale-option active">UMF™ 24+</div>
+                    <div class="scale-option">UMF™ 26+</div>
+                    <div class="scale-option">UMF™ 28+</div>
+                    <div class="scale-option">UMF™ 30+</div>
+                </div>
+                
+                <div class="taste-profile">
+                    <div class="taste-profile-title">TASTE PROFILE</div>
+                    <div class="taste-slider">
+                        <span class="label">Clean & Intense</span>
+                        <div class="slider-track">
+                            <div class="slider-thumb"></div>
+                        </div>
+                        <span class="label">Bold & Intense</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for UMF/MGO Information -->
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Manuka Honey</h3>
+                <div class="subtitle">UMF 24+<br>MGO 1122+</div>
+                <button class="modal-button">
+                    <span>ⓘ</span> What is UMF and MGO?
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="umf-explanation">
+                    <div class="explanation-title">UMF</div>
+                    <div class="explanation-text"><strong>UMF</strong> is the strength and purity rating of Manuka honey.</div>
+                    
+                    <div class="scale-bar">
+                        <div class="scale-segment scale-10">10+</div>
+                        <div class="scale-segment scale-15">15+</div>
+                        <div class="scale-segment scale-20">20+</div>
+                        <div class="scale-segment scale-24">24+</div>
+                        <div class="scale-segment scale-26">26+</div>
+                        <div class="scale-segment scale-28">28+</div>
+                        <div class="scale-segment scale-30">30+</div>
+                    </div>
+                    
+                    <div class="explanation-text">The higher the number, the greater the potency and rarity of Manuka honey.</div>
+                </div>
+                
+                <div class="mgo-explanation">
+                    <div class="explanation-title">MGO</div>
+                    <div class="explanation-text"><strong>MGO</strong> is the key natural compound that gives Manuka honey its special antibacterial strength.</div>
+                    
+                    <div class="scale-bar mgo-scale-bar">
+                        <div class="scale-segment scale-10">263+</div>
+                        <div class="scale-segment scale-15">514+</div>
+                        <div class="scale-segment scale-20">829+</div>
+                        <div class="scale-segment scale-24">1122+</div>
+                        <div class="scale-segment scale-26">1282+</div>
+                        <div class="scale-segment scale-28">1450+</div>
+                        <div class="scale-segment scale-30">1620+</div>
+                    </div>
+                    
+                    <div class="explanation-text">The higher the number, the higher the antibacterial properties in the honey.</div>
+                </div>
+                
+                <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="vinci.js"></script> 
+    </body>
+</html>
